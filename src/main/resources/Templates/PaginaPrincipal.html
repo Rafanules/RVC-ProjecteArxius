@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+<h1>Futbolistas</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Equipo</th>
+        <th>Posición</th>
+        <th>Nacionalidad</th>
+        <th>Edad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="futbolista : ${futbolistas}">
+        <td th:text="${futbolista.nombre}">Nombre</td>
+        <td th:text="${futbolista.equipo}">Equipo</td>
+        <td th:text="${futbolista.posicion}">Posición</td>
+        <td th:text="${futbolista.nacionalidad}">Nacionalidad</td>
+        <td th:text="${futbolista.edad}">Edad</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>

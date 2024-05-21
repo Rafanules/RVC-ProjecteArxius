@@ -1,0 +1,32 @@
+{
+  "futbolistas": [
+    {
+      "nombre": "Lionel Messi",
+      "equipo": "Paris Saint-Germain",
+      "posicion": "Delantero",
+      "nacionalidad": "Argentina",
+      "edad": 35
+    },
+    {
+      "nombre": "Cristiano Ronaldo",
+      "equipo": "Manchester United",
+      "posicion": "Delantero",
+      "nacionalidad": "Portugal",
+      "edad": 38
+    },
+    {
+      "nombre": "Neymar Jr.",
+      "equipo": "Paris Saint-Germain",
+      "posicion": "Delantero",
+      "nacionalidad": "Brasil",
+      "edad": 30
+    },
+    {
+      "nombre": "Monsef",
+      "equipo": "Nules",
+      "posicion": "Delantero",
+      "nacionalidad": "Congo",
+      "edad": 20
+    }
+  ]
+}

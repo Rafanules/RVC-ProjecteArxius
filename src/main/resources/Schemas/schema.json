@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "equipos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": { "type": "string" },
+          "pais": { "type": "string" },
+          "entrenador": { "type": "string" },
+          "liga": { "type": "string" }
+        },
+        "required": ["nombre", "pais", "entrenador", "liga"]
+      }
+    },
+    "futbolistas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": { "type": "string" },
+          "equipo": { "type": "string" },
+          "posicion": { "type": "string" },
+          "nacionalidad": { "type": "string" },
+          "edad": { "type": "integer" }
+        },
+        "required": ["nombre", "equipo", "posicion", "nacionalidad", "edad"]
+      }
+    }
+  },
+  "required": ["equipos", "futbolistas"]
+}

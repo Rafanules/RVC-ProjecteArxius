@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles del Equipo</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 th:text="${equipo.nombre}">Nombre</h1>
+    </header>
+    <section>
+        <div class="info-block">
+            <h2>Información del Equipo</h2>
+            <ul class="info-list">
+                <li><strong>País:</strong> <span th:text="${equipo.pais}">País</span></li>
+                <li><strong>Entrenador:</strong> <span th:text="${equipo.entrenador}">Entrenador</span></li>
+                <li><strong>Liga:</strong> <span th:text="${equipo.liga}">Liga</span></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <a class="list-item" href="/">Volver a la página principal</a>
+    </footer>
+</div>
+</body>
+</html>

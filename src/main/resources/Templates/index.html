@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Página Principal</h1>
+    </header>
+    <section>
+        <h2>Futbolistas</h2>
+        <ul class="list">
+            <li th:each="futbolista : ${futbolistas}">
+                <a th:href="@{'/futbolista/' + ${futbolista.nombre}}" th:text="${futbolista.nombre}" class="list-item">Nombre</a>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Equipos</h2>
+        <ul class="list">
+            <li th:each="equipo : ${equipos}">
+                <a th:href="@{'/equipo/' + ${equipo.nombre}}" th:text="${equipo.nombre}" class="list-item">Nombre</a>
+            </li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Futbolista</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 th:text="${futbolista.nombre}">Nombre</h1>
+    </header>
+    <section>
+        <div class="info-block">
+            <h2>Detalles del Futbolista</h2>
+            <ul class="info-list">
+                <li><strong>Equipo:</strong> <span th:text="${futbolista.equipo}">Equipo</span></li>
+                <li><strong>Posición:</strong> <span th:text="${futbolista.posicion}">Posición</span></li>
+                <li><strong>Nacionalidad:</strong> <span th:text="${futbolista.nacionalidad}">Nacionalidad</span></li>
+                <li><strong>Edad:</strong> <span th:text="${futbolista.edad}">Edad</span></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <a class="list-item" th:href="@{/}">Volver a la página principal</a>
+    </footer>
+</div>
+</body>
+</html>

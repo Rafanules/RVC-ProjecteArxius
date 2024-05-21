@@ -1,0 +1,22 @@
+{
+  "equipos": [
+    {
+      "nombre": "Paris Saint-Germain",
+      "pais": "Francia",
+      "entrenador": "Mauricio Pochettino",
+      "liga": "Ligue 1"
+    },
+    {
+      "nombre": "Manchester United",
+      "pais": "Inglaterra",
+      "entrenador": "Ralf Rangnick",
+      "liga": "Premier League"
+    },
+    {
+      "nombre": "Nules",
+      "pais": "Inglaterra",
+      "entrenador": "Ralf Rangnick",
+      "liga": "Premier League"
+    }
+  ]
+}
