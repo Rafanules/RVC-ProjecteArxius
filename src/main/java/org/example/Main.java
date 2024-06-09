@@ -71,37 +71,8 @@ public class Main {
 }
 
 /*
-PROBLEMAS ENCONTRADOS<
-
--Error al cargar la ruta de json y css (Resolt).
-Tuve inconvenientes a la hora de vincular los .json en el main y el .css en los ficheros .html.
-
-Solucion:
-Insertar correctamente la ruta relativa
-
-
-
--Incompatibilidad  con versiones en las dependencias (Resolt).
-Tras intentar implementar diversas dependencias tuve que ir modificando las versiones hasta encontrar las apropiadas.
-
-Solucion:
-Realizar prueba y error con las diferentes versiones utilizando las salidas de consola como referencia.
-
-
-* */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ * Main-Controlador principal de la aplicación Spring Boot que maneja las peticiones de la web.
+ * - Se inicializan los mapas `futbolistas` y `equipos` con datos de archivos JSON.
+ * - Proporciona endpoints para la página principal, detalles de futbolistas y equipos.
+ * - Utiliza Thymeleaf para renderizar las páginas HTML.
+ */

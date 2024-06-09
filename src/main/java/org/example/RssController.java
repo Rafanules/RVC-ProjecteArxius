@@ -30,7 +30,7 @@ public class RssController {
         List<Map<String, Object>> futbolistas = mainController.getFutbolistas().get("futbolistas");
         List<Map<String, Object>> equipos = mainController.getEquipos().get("equipos");
 
-        // Añadir futbolistas al RSS
+        // Futbolistas
         for (Map<String, Object> futbolista : futbolistas) {
             rssContent.append("<item>");
             rssContent.append("<title>").append(futbolista.get("nombre")).append("</title>");
@@ -39,7 +39,7 @@ public class RssController {
             rssContent.append("</item>");
         }
 
-        // Añadir equipos al RSS
+        // Equipos
         for (Map<String, Object> equipo : equipos) {
             rssContent.append("<item>");
             rssContent.append("<title>").append(equipo.get("nombre")).append("</title>");
@@ -54,3 +54,9 @@ public class RssController {
         return rssContent.toString();
     }
 }
+
+/*
+ * RssController.java: Controlador REST que genera un feed RSS en XML para los futbolistas y equipos.
+ * - Utiliza datos cargados por el `Main` controller.
+ * - Devuelve una representación en XML del contenido en formato RSS.
+ */

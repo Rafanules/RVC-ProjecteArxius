@@ -43,3 +43,6 @@
         </plugins>
     </build>
 </project>
+
+<!--Este es el archivo `pom.xml` de Maven para el proyecto Spring Boot.-->
+<!--Define las dependencias necesarias, como Spring Boot Starter Web y Thymeleaf, y la configuración básica del proyecto.-->

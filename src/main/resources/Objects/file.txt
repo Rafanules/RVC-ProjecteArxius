@@ -1,0 +1,5 @@
+Equipos.json: Archivo JSON que contiene una lista de equipos de fútbol con sus respectivos atributos.
+
+Futbolistas.json: Archivo JSON que contiene una lista de futbolistas con sus respectivos atributos.
+
+schema.json: Define la estructura de los archivos `equipos` y `futbolistas`.
